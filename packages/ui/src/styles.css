@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import "@axon-ds/tokens/tokens.css";
+
+/*
+ * Bind Tailwind's theme to the design-token custom properties so utility
+ * classes (bg-primary-500, rounded-md, etc.) resolve to Figma-sourced values.
+ */
+@theme {
+  --color-primary-50: var(--axon-color-primary-50);
+  --color-primary-100: var(--axon-color-primary-100);
+  --color-primary-300: var(--axon-color-primary-300);
+  --color-primary-500: var(--axon-color-primary-500);
+  --color-primary-700: var(--axon-color-primary-700);
+  --color-primary-900: var(--axon-color-primary-900);
+
+  --color-neutral-0: var(--axon-color-neutral-0);
+  --color-neutral-50: var(--axon-color-neutral-50);
+  --color-neutral-200: var(--axon-color-neutral-200);
+  --color-neutral-500: var(--axon-color-neutral-500);
+  --color-neutral-700: var(--axon-color-neutral-700);
+  --color-neutral-900: var(--axon-color-neutral-900);
+
+  --color-danger-500: var(--axon-color-danger-500);
+  --color-success-500: var(--axon-color-success-500);
+
+  --spacing-1: var(--axon-space-1);
+  --spacing-2: var(--axon-space-2);
+  --spacing-3: var(--axon-space-3);
+  --spacing-4: var(--axon-space-4);
+  --spacing-6: var(--axon-space-6);
+  --spacing-8: var(--axon-space-8);
+
+  --radius-sm: var(--axon-radius-sm);
+  --radius-md: var(--axon-radius-md);
+  --radius-lg: var(--axon-radius-lg);
+  --radius-full: var(--axon-radius-full);
+
+  --font-sans: var(--axon-font-sans);
+  --font-size-sm: var(--axon-font-size-sm);
+  --font-size-base: var(--axon-font-size-base);
+  --font-size-lg: var(--axon-font-size-lg);
+}

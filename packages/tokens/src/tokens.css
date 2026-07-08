@@ -1,0 +1,50 @@
+/**
+ * Design tokens as CSS custom properties.
+ *
+ * This file is the intended sync target for values pulled from Figma
+ * variables (via the Figma MCP server) — when a token changes in Figma,
+ * update the corresponding custom property below rather than hand-tuning
+ * component styles.
+ */
+:root {
+  /* Color */
+  --axon-color-primary-50: oklch(0.97 0.02 260);
+  --axon-color-primary-100: oklch(0.93 0.05 260);
+  --axon-color-primary-300: oklch(0.8 0.12 260);
+  --axon-color-primary-500: oklch(0.6 0.19 260);
+  --axon-color-primary-700: oklch(0.45 0.17 260);
+  --axon-color-primary-900: oklch(0.3 0.13 260);
+
+  --axon-color-neutral-0: oklch(1 0 0);
+  --axon-color-neutral-50: oklch(0.98 0 0);
+  --axon-color-neutral-200: oklch(0.92 0 0);
+  --axon-color-neutral-500: oklch(0.6 0 0);
+  --axon-color-neutral-700: oklch(0.4 0 0);
+  --axon-color-neutral-900: oklch(0.15 0 0);
+
+  --axon-color-danger-500: oklch(0.6 0.22 25);
+  --axon-color-success-500: oklch(0.7 0.17 145);
+
+  /* Spacing */
+  --axon-space-1: 0.25rem;
+  --axon-space-2: 0.5rem;
+  --axon-space-3: 0.75rem;
+  --axon-space-4: 1rem;
+  --axon-space-6: 1.5rem;
+  --axon-space-8: 2rem;
+
+  /* Radius */
+  --axon-radius-sm: 0.25rem;
+  --axon-radius-md: 0.5rem;
+  --axon-radius-lg: 1rem;
+  --axon-radius-full: 9999px;
+
+  /* Typography */
+  --axon-font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --axon-font-size-sm: 0.875rem;
+  --axon-font-size-base: 1rem;
+  --axon-font-size-lg: 1.125rem;
+  --axon-font-weight-regular: 400;
+  --axon-font-weight-medium: 500;
+  --axon-font-weight-bold: 700;
+}
