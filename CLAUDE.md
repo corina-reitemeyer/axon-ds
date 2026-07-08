@@ -17,11 +17,18 @@ React design-system component library. Turborepo + pnpm monorepo, Tailwind CSS v
 4. Add a colocated `.stories.tsx` with stories for each meaningful variant/state.
 5. Run `pnpm storybook` and use the **Storybook MCP** server (exposed at `http://localhost:6006/mcp` once running) to inspect the rendered story and confirm it matches the Figma frame before considering the component done.
 6. Add a `.test.tsx` covering interaction behavior (not visual output) with Vitest + React Testing Library.
+7. Check the **Accessibility** panel in Storybook (powered by `@storybook/addon-a11y`) for each story/variant and resolve violations before considering the component done.
 
 ## MCP servers
 
 - **Figma MCP** — installed as a Claude Code plugin (`figma@claude-plugins-official`), not part of this repo. Link-based: paste the Figma file/frame link you want inspected.
 - **Storybook MCP** — `@storybook/addon-mcp`, registered as a project-scoped HTTP MCP server pointing at `http://localhost:6006/mcp`. Requires `pnpm storybook` (or `pnpm dev`) to be running.
+
+## Accessibility
+
+- `eslint-plugin-jsx-a11y` runs as part of `pnpm lint` / CI — static checks (missing `alt`, invalid ARIA, etc.) on every commit.
+- `@storybook/addon-a11y` audits every rendered story with axe-core — check its panel per component/variant, not just once per component.
+- The axe DevTools browser extension is a good supplement for manual, ad-hoc page-level audits, but isn't wired into this repo's automation.
 
 ## Conventions
 
