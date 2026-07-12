@@ -29,6 +29,8 @@
   --color-neutral-900: var(--axon-color-neutral-900);
 
   --color-danger-500: var(--axon-color-danger-500);
+  --color-danger-700: var(--axon-color-danger-700);
+  --color-danger-900: var(--axon-color-danger-900);
   --color-success-500: var(--axon-color-success-500);
 
   --spacing-1: var(--axon-space-1);

@@ -22,7 +22,9 @@
   --axon-color-neutral-700: oklch(0.4 0 0);
   --axon-color-neutral-900: oklch(0.15 0 0);
 
-  --axon-color-danger-500: oklch(0.6 0.22 25);
+  --axon-color-danger-500: oklch(0.57 0.2 26);
+  --axon-color-danger-700: oklch(0.52 0.19 27);
+  --axon-color-danger-900: oklch(0.36 0.15 29);
   --axon-color-success-500: oklch(0.7 0.17 145);
 
   /* Spacing */

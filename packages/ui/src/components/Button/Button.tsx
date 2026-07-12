@@ -26,7 +26,7 @@ const variantClasses: Record<ButtonVariant, string> = {
   link: `bg-transparent text-primary-700 hover:bg-primary-50 active:bg-primary-100 active:text-primary-900 ${focusRing}`,
   neutral:
     "bg-neutral-50 text-neutral-900 border border-neutral-200 hover:bg-neutral-200",
-  danger: "bg-danger-500 text-neutral-0 hover:opacity-90",
+  danger: `bg-danger-500 text-neutral-0 hover:bg-danger-700 active:bg-danger-900 ${focusRing}`,
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
