@@ -8,12 +8,12 @@
  */
 :root {
   /* Color */
-  --axon-color-primary-50: oklch(0.88 0.02 275);
-  --axon-color-primary-100: oklch(0.84 0.06 275);
-  --axon-color-primary-300: oklch(0.71 0.15 275);
+  --axon-color-primary-50: oklch(0.94 0.03 286);
+  --axon-color-primary-100: oklch(0.86 0.06 285);
+  --axon-color-primary-300: oklch(0.76 0.11 284);
   --axon-color-primary-500: oklch(0.51 0.23 275);
-  --axon-color-primary-700: oklch(0.36 0.21 275);
-  --axon-color-primary-900: oklch(0.21 0.16 275);
+  --axon-color-primary-700: oklch(0.43 0.2 274);
+  --axon-color-primary-900: oklch(0.36 0.16 275);
 
   --axon-color-neutral-0: oklch(1 0 0);
   --axon-color-neutral-50: oklch(0.98 0 0);
@@ -41,6 +41,8 @@
 
   /* Typography */
   --axon-font-sans: "DM Sans Variable", "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --axon-font-size-2xs: 0.75rem;
+  --axon-font-size-xs: 0.8125rem;
   --axon-font-size-sm: 0.875rem;
   --axon-font-size-base: 1rem;
   --axon-font-size-lg: 1.125rem;

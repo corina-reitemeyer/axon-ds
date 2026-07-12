@@ -3,6 +3,13 @@
 @import "@axon-ds/tokens/tokens.css";
 
 /*
+ * Consuming apps (e.g. apps/storybook) load this stylesheet from outside
+ * this package, so Tailwind's automatic source detection stops at their
+ * Vite root and never scans packages/ui/src. Register it explicitly.
+ */
+@source "./";
+
+/*
  * Bind Tailwind's theme to the design-token custom properties so utility
  * classes (bg-primary-500, rounded-md, etc.) resolve to Figma-sourced values.
  */
@@ -37,6 +44,8 @@
   --radius-full: var(--axon-radius-full);
 
   --font-sans: var(--axon-font-sans);
+  --text-2xs: var(--axon-font-size-2xs);
+  --font-size-xs: var(--axon-font-size-xs);
   --font-size-sm: var(--axon-font-size-sm);
   --font-size-base: var(--axon-font-size-base);
   --font-size-lg: var(--axon-font-size-lg);

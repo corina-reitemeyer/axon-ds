@@ -8,17 +8,21 @@ const meta = {
   argTypes: {
     variant: {
       control: "select",
-      options: ["primary", "secondary", "danger"],
+      options: ["primary", "secondary", "tertiary", "link", "neutral", "danger"],
     },
     size: {
       control: "select",
-      options: ["sm", "md", "lg", "xl"],
+      options: ["xs", "sm", "md", "lg", "xl"],
+    },
+    disabled: {
+      control: "boolean",
     },
   },
   args: {
     children: "Button",
     variant: "primary",
     size: "md",
+    disabled: false,
   },
 } satisfies Meta<typeof Button>;
 
@@ -33,14 +37,18 @@ export const Secondary: Story = {
   args: { variant: "secondary" },
 };
 
+export const Tertiary: Story = {
+  args: { variant: "tertiary" },
+};
+
+export const Link: Story = {
+  args: { variant: "link" },
+};
+
+export const Neutral: Story = {
+  args: { variant: "neutral" },
+};
+
 export const Danger: Story = {
   args: { variant: "danger" },
-};
-
-export const Disabled: Story = {
-  args: { disabled: true },
-};
-
-export const XLarge: Story = {
-  args: { size: "xl" },
 };
