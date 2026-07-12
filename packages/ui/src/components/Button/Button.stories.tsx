@@ -12,7 +12,7 @@ const meta = {
     },
     size: {
       control: "select",
-      options: ["sm", "md", "lg"],
+      options: ["sm", "md", "lg", "xl"],
     },
   },
   args: {
@@ -39,4 +39,8 @@ export const Danger: Story = {
 
 export const Disabled: Story = {
   args: { disabled: true },
+};
+
+export const XLarge: Story = {
+  args: { size: "xl" },
 };

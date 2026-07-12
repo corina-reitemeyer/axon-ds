@@ -3,7 +3,7 @@ import type { ButtonHTMLAttributes } from "react";
 import clsx from "clsx";
 
 export type ButtonVariant = "primary" | "secondary" | "danger";
-export type ButtonSize = "sm" | "md" | "lg";
+export type ButtonSize = "sm" | "md" | "lg" | "xl";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
@@ -21,6 +21,7 @@ const sizeClasses: Record<ButtonSize, string> = {
   sm: "text-sm px-3 py-1.5 rounded-sm",
   md: "text-base px-4 py-2 rounded-md",
   lg: "text-lg px-6 py-3 rounded-lg",
+  xl: "inline-flex items-center justify-center gap-2 h-14 px-6 rounded-full text-lg",
 };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
